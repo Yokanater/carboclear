@@ -1,0 +1,193 @@
+.footprint {
+  margin: 0px 60px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  &__intro {
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah';
+
+    span {
+      color: var(--primary);
+      font-family: 'Gloria Hallelujah';
+    }
+  }
+
+  &__body {
+    display: flex;
+    gap: 25px;
+    height: 80%;
+
+    &__total {
+      width: 28%;
+
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    &__emissions {
+      background-color: rgba(243, 37, 37, 0.0394);
+      width: 36%;
+
+      border-radius: 10px;
+    }
+
+    &__offsets {
+      background-color: rgba(37, 243, 44, 0.0394);
+      width: 36%;
+
+      border-radius: 10px;
+    }
+
+    &__total {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      &__heading {
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      &__value {
+        font-size: 64px;
+        font-weight: 800;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 10% auto 20px auto;
+
+        span {
+          margin-top: -5px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      &__description {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: grey;
+        margin: 10px auto auto auto;
+        text-align: center;
+      }
+    }
+
+    &__emissions {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        &__heading {
+          font-size: 18px;
+          font-weight: 800;
+        }
+
+        &__action {
+          margin: auto 0 auto auto;
+          font-size: 15px;
+          font-weight: 600;
+          color: rgb(255, 47, 47, 0.8);
+          cursor: pointer;
+          transition: all 0.2s;
+
+          &:hover {
+            color: rgb(250, 24, 24);
+          }
+        }
+      }
+
+      &__body {
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+
+          &__info {
+            display: flex;
+            flex-direction: column;
+            margin: auto auto auto 0;
+          }
+
+          &__value {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.8);
+            margin: auto 0 auto auto;
+          }
+        }
+      }
+    }
+
+    &__offsets {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      &__body {
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+
+          &__info {
+            display: flex;
+            flex-direction: column;
+            margin: auto auto auto 0;
+          }
+
+          &__value {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.8);
+            margin: auto 0 auto auto;
+          }
+        }
+      }
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        &__heading {
+          font-size: 18px;
+          font-weight: 800;
+        }
+
+        &__action {
+          margin: auto 0 auto auto;
+          font-size: 15px;
+          font-weight: 600;
+          color: var(--primary);
+          cursor: pointer;
+          transition: all 0.1s;
+
+          &:hover {
+            color: var(--primary-dark);
+          }
+        }
+      }
+    }
+  }
+}
+
+.noLogs {
+  color: grey;
+  margin: 10px auto;
+  font-weight: 500;
+  text-align: center;
+}

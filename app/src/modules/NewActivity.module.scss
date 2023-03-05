@@ -1,0 +1,61 @@
+.body {
+  display: flex;
+  flex-flow: column;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 7px;
+    color: grey;
+    line-height: 22px;
+
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+      padding: 12px 16px;
+      border: 1.3px solid hsl(0, 0%, 80%);
+      border-radius: 5px;
+      resize: none;
+
+      width: 100%;
+      height: fit-content;
+      box-sizing: border-box;
+      outline: none;
+      min-height: 100px;
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+
+    &__button {
+      background-color: var(--primary);
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 20px;
+      height: fit-content;
+      margin: auto 0 -7px auto;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--primary-dark);
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.home {
+  margin: 0px 60px;
+
+  &__intro {
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah';
+  }
+
+  &__cards {
+    margin-top: 10px;
+
+    &__first {
+      display: flex;
+      gap: 25px;
+
+      &__card {
+        border-radius: 8px;
+        background-color: white;
+        height: 280px;
+        flex-basis: 0px;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+    }
+
+    &__second {
+      display: flex;
+      gap: 25px;
+      margin-top: 25px;
+      margin-bottom: 50px;
+      &__card1 {
+        border-radius: 8px;
+        background-color: white;
+        height: 280px;
+        flex-basis: 0px;
+        flex-grow: 2.05;
+        flex-shrink: 2.05;
+      }
+      &__card {
+        border-radius: 8px;
+        background-color: var(--primary);
+        height: 280px;
+        flex-basis: 0px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: var(--primary-dark);
+        }
+
+        &__h2 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.highlight {
+  font-family: inherit;
+  color: var(--primary);
+}
+
+.highlights {
+  font-family: inherit;
+  color: white;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.cards {
+  &__heading {
+    margin-left: 30px;
+    margin-top: 24px;
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  &__points {
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+    margin-bottom: 18px;
+  }
+
+  &__subheading {
+    height: 150px;
+    font-size: 22px;
+    flex: 1 1 0px;
+    border-radius: 6px;
+    background-color: rgba(57, 184, 108, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__headings {
+    display: flex;
+    gap: 12px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.s {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+}
+.leaderboardbtn {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 6px;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s;
+  margin: auto 0 auto auto;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary-dark);
+  }
+}
