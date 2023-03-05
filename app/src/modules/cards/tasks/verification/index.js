@@ -93,6 +93,7 @@ export default function Verification({
 
               setLoading(true);
               {console.log(task)}
+              let real = false;
               task.tagsForAI.forEach((tag) => {
                 console.log(tag, predictionArr[0])
                 console.log(predictionArr[0].class.includes('plant'))
@@ -102,12 +103,15 @@ export default function Verification({
                     prediction.class.includes(tag)
                   ) {
                     console.log('done')
+                    real = true;
                     markTaskAsDone(task);
                     return setPopup(false);
                   }
                 });
               });
+              if (!real) {
               alert("Please upload a better of image you completing the task!");
+              }
               setLoading(false);
             }}
           >
